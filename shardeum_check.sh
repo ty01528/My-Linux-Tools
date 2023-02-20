@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "START SHARDEUM_CHECK"
-while True
+while :
 do
 docker exec shardeum-dashboard operator-cli status | grep stopped
 if [ $? -eq 0 ]; then
