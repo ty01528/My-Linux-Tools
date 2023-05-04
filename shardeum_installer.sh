@@ -30,15 +30,7 @@ read -p "During this early stage of Betanet the Shardeum team will be collecting
 This is only temporary and will be discontinued as we get closer to mainnet.
 Thanks for running a node and helping to make Shardeum better.
 
-By running this installer, you agree to allow the Shardeum team to collect this data. (Y/n)?: " WARNING_AGREE
-WARNING_AGREE=$(echo "$WARNING_AGREE" | tr '[:upper:]' '[:lower:]')
-WARNING_AGREE=${WARNING_AGREE:-y}
-
-if [ $WARNING_AGREE != "y" ];
-then
-  echo "Diagnostic data collection agreement not accepted. Exiting installer."
-  exit
-fi
+By running this installer, you agree to allow the Shardeum team to collect this data. (Y)?: "
 
 
 # Check all things that will be needed for this script to succeed like access to docker and docker-compose
