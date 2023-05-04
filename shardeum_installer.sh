@@ -26,11 +26,12 @@ if ! (command -v openssl > /dev/null || command -v shasum > /dev/null || command
 fi
 
 
-read -p "During this early stage of Betanet the Shardeum team will be collecting some performance and debugging info from your node to help improve future versions of the software.
-This is only temporary and will be discontinued as we get closer to mainnet.
-Thanks for running a node and helping to make Shardeum better.
+echo "During this early stage of Betanet the Shardeum team will be collecting some performance and debugging info from your node to help improve future versions of the software."
+echo "This is only temporary and will be discontinued as we get closer to mainnet."
+echo "Thanks for running a node and helping to make Shardeum better."
+echo "By running this installer, you agree to allow the Shardeum team to collect this data."
 
-By running this installer, you agree to allow the Shardeum team to collect this data. (Y)?: "
+REPLY="Y"
 
 
 # Check all things that will be needed for this script to succeed like access to docker and docker-compose
