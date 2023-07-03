@@ -8,5 +8,5 @@ then
         echo "START SHARDEUM"
         docker exec shardeum-dashboard operator-cli start
 fi
-sleep 1m
+sleep 30m
 done
